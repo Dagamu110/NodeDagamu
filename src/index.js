@@ -9,7 +9,7 @@ app.get('/app.js', ( req , res)  => {
 	res.sendFile(__dirname + '/public/app.js');
 });
 
-var server = app.listen(8810);
+var server = app.listen(80);
 
 app.use(express.static('public'));
 
