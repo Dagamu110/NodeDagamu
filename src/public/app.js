@@ -1,4 +1,4 @@
-var socket = io.connect('http://localhost:3000');
+var socket = io.connect('https://dagamu.herokuapp.com');
 
 var btn_move = document.getElementById('move');
 
