@@ -3,7 +3,7 @@ var socket = io.connect('https://dagamu.herokuapp.com');
 var btn_move = document.getElementById('move');
 var btn_send = document.getElementById('send');
 
-var input_chat document.getElementById('chat');
+var input_chat = document.getElementById('chat');
 
 socket.on('recive', function(message){
     alert(message);
@@ -18,6 +18,6 @@ btn_move.addEventListener('click', function(){
 
 btn_send.addEventListener('click', function(){
     socket.emit('move', {
-        message : input_chat.value;
+        message : input_chat.value
     });
 });
